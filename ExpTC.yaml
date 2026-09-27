@@ -37,9 +37,11 @@ info:
     - Rollback improvements (removing improvements from equipment)
     - Adds the ability to mine and profitably sell valuable minerals
 
-# public — the sources this mod is based on / derived from. Empty: ExpTC has no museum exhibit —
-# it was unpacked from the REDUX pack (`origin_artefact/unpacked/redux/Mods/Expansion/ExpTC`).
-based_on: []
+# public — the sources this mod is based on / derived from. The REDUX edition of the original mod,
+# archived in the museum (no source URL exists outside it).
+based_on:
+  - source: 🏛️ https://github.com/space-rangers-mods-museum/ExpTC__redux
+    note: ExpTC - Huk, Klaxons, 100kg, Ковбой Билл; the REDUX edition of the pack, the newest of the two shipped builds
 
 # public — what this workshop edition changed relative to its source
 changes:

@@ -22,6 +22,16 @@ The Technology Center offers:
 - Rollback improvements (removing improvements from equipment)
 - Adds the ability to mine and profitably sell valuable minerals
 
+---
+
+## 🔗 Based on
+
+```yaml
+based_on:
+  - source: 🏛️ https://github.com/space-rangers-mods-museum/ExpTC__redux
+    note: ExpTC - Huk, Klaxons, 100kg, Ковбой Билл; the REDUX edition of the pack, the newest of the two shipped builds
+
+```
 
 ---
 
