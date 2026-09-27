@@ -730,7 +730,7 @@ RuinName ^{
 }
 FormRuins ^{
     TC ^{
-        Greeting=Thank you for visiting our station station. Make yourself comfortable, <Player>, feel right at home. We are the Galaxy's finest specialists in the technological servicing of starships and equipment. Our list of services includes: equipment upgrades, probe modernization, changing susceptibility to one or another type of damage, and much more! I suggest you take full advantage of our delicious coffee and study the price list while you are at it.
+        Greeting=Thank you for visiting our station. Make yourself comfortable, <Player>, feel right at home. We are the Galaxy's finest specialists in the technological servicing of starships and equipment. Our list of services includes: equipment upgrades, probe modernization, changing susceptibility to one or another type of damage, and much more! I suggest you take full advantage of our delicious coffee and study the price list while you are at it.
     }
 }
 Script ^{
@@ -876,10 +876,10 @@ ShipType ^{
 }
 GalaxyNews ^{
     CreateNewObject ^{
-        TC1=Been dreaming of upgrading that old rusty bucket you inherited from your great-grandmother? Hurry to system star, where our highly qualified specialists will gladly turn it into a real beauty! Technology Center name -- the best rates in sector sector!
-        TC2=Attention all pilots! In system star of sector sector, the chief architect has just cut the red ribbon on a new technology center name! Your galaxy maps have already been updated.
-        TC3=A new technology center name opened today in system star of sector sector. We strongly advise all conscientious pilots to have their starships serviced as soon as possible.
-        TC4=We are happy to announce that our network of technology centers is expanding! A new service station name awaits pilots in system star of sector sector! Do not fly past! Only here will you find the finest technology services in the whole Galaxy!
+        TC1=Been dreaming of upgrading that old rusty bucket you inherited from your great-grandmother? Hurry to system star, where our highly qualified specialists will gladly turn it into a real beauty! Technology Center name -- the best rates in sector!
+        TC2=Attention all pilots! In system star, in sector, the chief architect has just cut the red ribbon on a new technology center name! Your galaxy maps have already been updated.
+        TC3=A new technology center name opened today in system star, in sector. We strongly advise all conscientious pilots to have their starships serviced as soon as possible.
+        TC4=We are happy to announce that our network of technology centers is expanding! A new service station name awaits pilots in system star, in sector! Do not fly past! Only here will you find the finest technology services in the whole Galaxy!
     }
 }
 ShipInfo ^{
