@@ -1,0 +1,7 @@
+# build/package artifacts
+*.zip
+*.log
+
+# scratch
+tmp/
+.ruff_cache/

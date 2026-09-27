@@ -1,0 +1,50 @@
+mod: ExpTC
+
+# public — keys mirror ModuleInfo.txt; rendered into mod/ModuleInfo.txt by build_mod.py
+# and into the card README.md by generate_card.py.
+info:
+  Name: ExpTC
+  Author: "Huk, Klaxons, 100kg, Ковбой Билл, ringill"
+  Conflict: ""
+  Dependence: UtilityFunctionsPack
+  Priority: 1
+  Section: Разное
+  SectionEng: Miscellaneous
+  Languages: Rus,Eng
+  SmallDescription: |-
+    Добавляет новый тип баз - Технологический центр и несколько новых акринов для оружия
+    (Мод можно <color=0,150,15>подключать</color>/<color=150,0,15>отключать</color> в течение партии)
+  SmallDescriptionEng: |-
+    <color=250,20,20>Warning! Untranslated staff!</color> Adds a new base type - Technology Center and some new weapon akrins
+  FullDescription: |-
+    Технологический центр предлагает:
+    - Улучшение оборудования
+    - Закрытие и открытие слотов
+    - Изменение восприимчивости к тому или иному типу урона
+    - Установка спасательной шлюпки
+    - Прошивка оборудования (увеличение уровня оборудования)
+    - Улучшение зондов
+    - Откат улучшений (снятие улучшения с оборудования)
+    - Возможность добывать и выгодно продавать ценные минералы
+  FullDescriptionEng: |-
+    The Technology Center offers:
+    - Equipment Upgrades
+    - Closing and opening slots
+    - Change susceptibility to a particular type of damage
+    - Lifeboat Installation
+    - Hardware firmware (hardware upgrade)
+    - Improve probes
+    - Rollback improvements (removing improvements from equipment)
+    - Adds the ability to mine and profitably sell valuable minerals
+
+# public — the sources this mod is based on / derived from. Empty: ExpTC has no museum exhibit —
+# it was unpacked from the REDUX pack (`origin_artefact/unpacked/redux/Mods/Expansion/ExpTC`).
+based_on: []
+
+# public — what this workshop edition changed relative to its source
+changes:
+  - "Restored the English `CFG/Eng/Lang.dat` from the Russian tree. In the REDUX edition the English side is decorative — its own `ModuleInfo` admits it with the `Warning! Untranslated staff!` mark, and the file has no `GalaxyNews` block at all — so the whole English was rebuilt: all 871 keys match the Russian tree (0 missing / 0 extra), 209 Cyrillic strings translated in the game's voice and 662 service values copied verbatim (see `.ai/kb/translation-style.md`)."
+  - "This fixes a crash. The Redux `SpawnNewTC` builds the announcement of a new technological centre from `CT('GalaxyNews.CreateNewObject.TC'+n)`; that key existed only in Russian, so in an English-language game `CT` returned an empty string and `TGalaxy.AddPlanetNews` raised `Получена пустая планетарная новость`, aborting the whole turn code and exiting the game. The four keys now exist in English. Details on `.ai/kb/workshop/ExpTC.md`."
+  - "Signed every `CFG/*.dat` (`Main.dat`, `CacheData.dat`, both `Lang.dat`) — they ship unsigned, and one unsigned `.dat` disqualifies the run from achievements."
+  - "Repointed the mod's own `Mods\\Expansion\\ExpTC\\…` paths in `src/CacheData.txt` to `Mods\\Miscellaneous\\ExpTC\\…` (the workshop deploys every mod under `Miscellaneous`)."
+  - "Dropped the loose text that came inside the pack (`CFG/Rus/Lang.txt`, `DATA/Script/Mod_ExpTC.txt`): the readable sources are the ones decoded/decompiled ourselves into `src/`."
