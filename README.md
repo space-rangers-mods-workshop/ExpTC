@@ -6,7 +6,7 @@
 
 ### Summary
 
-Warning! Untranslated staff! Adds a new base type - Technology Center and some new weapon akrins
+Adds a new base type - Technology Center and some new weapon akrins
 
 ---
 
